@@ -1,4 +1,4 @@
-module github.com/hofstadter-io/hof
+module github.com/rrichardson/hof
 
 go 1.17
 
