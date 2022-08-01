@@ -119,4 +119,4 @@ require (
 	moul.io/http2curl v1.0.0 // indirect
 )
 
-replace github.com/hofstadter-io/hof => github.com/rrichardson/hof v0.0.0-20220801160805-2a053ea27eb4
+replace github.com/hofstadter-io/hof => github.com/rrichardson/hof add_add
