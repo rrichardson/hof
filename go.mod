@@ -14,15 +14,14 @@ require (
 	github.com/flynn-archive/go-shlex v0.0.0-20150515145356-3f9db97f8568
 	github.com/franela/goblin v0.0.0-20200512143142-b260c999b2d7
 	github.com/fsnotify/fsnotify v1.5.4
-	github.com/gammazero/deque v0.1.2
 	github.com/gammazero/workerpool v1.1.2
 	github.com/go-git/go-billy/v5 v5.3.1
 	github.com/go-git/go-git/v5 v5.4.2
 	github.com/gofrs/flock v0.8.1
 	github.com/google/go-github/v38 v38.1.0
 	github.com/google/uuid v1.3.0
+	github.com/hofstadter-io/hof v0.0.0-00010101000000-000000000000
 	github.com/kevinburke/ssh_config v1.2.0
-	github.com/kirsle/configdir v0.0.0-20170128060238-e45d2f54772f
 	github.com/kr/pretty v0.3.0
 	github.com/ktrysmt/go-bitbucket v0.9.48
 	github.com/labstack/echo-contrib v0.12.0
@@ -39,7 +38,6 @@ require (
 	github.com/spf13/viper v1.12.0
 	github.com/stretchr/testify v1.8.0
 	github.com/xanzy/go-gitlab v0.69.0
-	go.uber.org/goleak v1.1.11
 	go.uber.org/zap v1.21.0
 	golang.org/x/mod v0.5.1
 	golang.org/x/oauth2 v0.0.0-20220722155238-128564f6959c
@@ -59,21 +57,23 @@ require (
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/cockroachdb/apd/v2 v2.0.2 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/elazarl/goproxy v0.0.0-20200310082302-296d8939dc5a // indirect
 	github.com/emicklei/proto v1.11.0 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
+	github.com/gammazero/deque v0.1.2 // indirect
 	github.com/go-git/gcfg v1.5.0 // indirect
 	github.com/go-stack/stack v1.8.1 // indirect
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
 	github.com/golang/glog v1.0.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
+	github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-retryablehttp v0.7.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
+	github.com/jtolds/gls v4.20.0+incompatible // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/labstack/gommon v0.3.1 // indirect
 	github.com/magiconair/properties v1.8.6 // indirect
@@ -96,7 +96,7 @@ require (
 	github.com/protocolbuffers/txtpbfmt v0.0.0-20220608084003-fc78c767cd6a // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/rogpeppe/go-internal v1.8.1 // indirect
-	github.com/smartystreets/goconvey v1.7.2 // indirect
+	github.com/smartystreets/assertions v1.2.0 // indirect
 	github.com/spf13/afero v1.9.2 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
@@ -118,3 +118,5 @@ require (
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	moul.io/http2curl v1.0.0 // indirect
 )
+
+replace github.com/hofstadter-io/hof => github.com/rrichardson/hof v0.0.0-20220801160805-2a053ea27eb4
