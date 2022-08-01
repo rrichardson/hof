@@ -76,6 +76,9 @@ var funcMap = template.FuncMap{
 	"gokind":  Helper_gokind,
 	"builtin": Helper_builtin,
 
+	"add": Helper_add,
+	"inc": Helper_inc,
+
 	"lookup": Helper_lookup,
 	"dref":   Helper_lookup,
 }
@@ -330,7 +333,7 @@ func Helper_dict(values ...interface{}) (map[string]interface{}, error) {
 		return nil, errors.New("invalid dict call")
 	}
 	dict := make(map[string]interface{}, len(values)/2)
-	for i := 0; i < len(values); i+=2 {
+	for i := 0; i < len(values); i += 2 {
 		key, ok := values[i].(string)
 		if !ok {
 			return nil, errors.New("dict keys must be strings")
@@ -356,6 +359,14 @@ func Helper_gokind(input interface{}) string {
 	v := reflect.ValueOf(input)
 	k := v.Kind()
 	return k.String()
+}
+
+func Helper_add(lhs, rhs int) int {
+	return lhs + rhs
+}
+
+func Helper_inc(val int) int {
+	return val + 1
 }
 
 var known_builtins = map[string]struct{}{
